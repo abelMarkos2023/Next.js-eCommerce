@@ -7,10 +7,10 @@ import { TProduct } from '@/types'
 
 const ProductCard = ({product}:{product:TProduct}) => {
   return (
-    <Card className='w-full max-w-sm p-0'>
+    <Card className='w-full max-w-sm p-0 rounded-xl overflow-hidden shadow-xl'>
         <CardHeader className='p-0 items-center'>
             <Link href={`/${product.slug}`}>
-                <Image height={300} width={300} src={product.images[0]} alt={product.name} />
+                <Image height={300} width={300} src={product.images[0]} alt={product.name} className='object-cover'/>
             </Link>
         </CardHeader>
         <CardContent className='p-2 '>

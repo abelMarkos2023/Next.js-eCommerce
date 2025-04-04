@@ -1,9 +1,9 @@
 
 import React from 'react'
-import Nav from '../Nav'
 import { Sheet, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from '../../sheet'
 import { EllipsisIcon } from 'lucide-react'
 import Logo from './Logo'
+import Nav from './Nav'
 
 
 const Header = () => {

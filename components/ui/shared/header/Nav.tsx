@@ -1,8 +1,9 @@
 import ThemeToggler from '@/components/ThemeToggler'
 import React from 'react'
-import { Button } from '../button'
 import Link from 'next/link'
-import { ShoppingCart, UserIcon } from 'lucide-react'
+import { ShoppingCart } from 'lucide-react'
+import UserButton from './UserButton'
+import { Button } from '../../button'
 
 const Nav = ({col}:{col?:boolean}) => {
   return (
@@ -13,11 +14,7 @@ const Nav = ({col}:{col?:boolean}) => {
                   <ShoppingCart /> Cart
                 </Link>
               </Button>
-              <Button asChild variant="default" size="lg">
-                <Link href="/login" className=''>
-                  <UserIcon /> Sign In
-                </Link>
-              </Button>
+              <UserButton />
         </div>
   )
 }
